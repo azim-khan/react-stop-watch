@@ -1,0 +1,88 @@
+@font-face {
+  font-family: digital-7;
+  src: url(../components/fonts/digital-7.ttf);
+}
+
+body {
+  height: 100%;
+  background-color: #f2774b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.stop-watch {
+  border: 15px solid #0c1828;
+  border-radius: 50%;
+  font-family: "digital-7", sans-serif;
+  height: 230px;
+  margin: 80px auto auto;
+  padding: 5px;
+  width: 230px;
+}
+
+.stop-watch > div {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  background-color: #405268;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.watch {
+  background-color: #ffffff;
+  float: left;
+  margin: calc(50% - 18px) 12px 0;
+  width: calc(100% - 24px);
+  color: red;
+  font-size: 38px;
+}
+
+.buttons {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.stop-watch button {
+  border: none;
+  color: white;
+  cursor: pointer;
+  float: left;
+  height: 34px;
+  padding: 0;
+  width: 50%;
+  position: relative;
+  outline: none;
+}
+
+.buttons button:first-child {
+  background-color: #6ec181;
+  font-size: 20px;
+}
+
+.buttons button:first-child span {
+  position: absolute;
+  right: 13px;
+  top: 4px;
+}
+
+.buttons button:last-child {
+  background-color: #007bff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.buttons button:last-child span {
+  left: 13px;
+  position: absolute;
+  top: 2px;
+}
+
+.buttons button[disabled] {
+  background-color: #f2f2f2;
+  cursor: default;
+}
