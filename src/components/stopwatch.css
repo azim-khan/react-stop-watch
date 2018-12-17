@@ -86,3 +86,7 @@ body {
   background-color: #f2f2f2;
   cursor: default;
 }
+
+a[title="Hosted on free web hosting 000webhost.com. Host your own website for FREE."] {
+  display: none;
+}

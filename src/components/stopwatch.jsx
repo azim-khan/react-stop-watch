@@ -37,7 +37,7 @@ class StopWatch extends Component {
     const { time } = this.state;
 
     let m = parseInt(time / 6000),
-      s = parseInt(time / 100),
+      s = parseInt(time / 100) % 60,
       ms = time % 100;
 
     m = m < 10 ? "0" + m : m;
